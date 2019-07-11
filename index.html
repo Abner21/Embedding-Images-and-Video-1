@@ -4,153 +4,34 @@
         <script src="https://kit.fontawesome.com/460a8b521b.js"></script>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-<!--        <link rel="stylesheet" href="styles.css">-->
+        <link rel="stylesheet" href="css/main.css">
         <title>Aaron and Abner Embedding Video and Images</title>
-
-        <style>
-            body{
-                background-color: rgb(40,40,40);
-                color: white;
-                font-family: sans-serif;
-            }
-
-            .AvatarBtns{
-                background-color: rgb(10,10,10);
-                color: green;
-                border: none;
-                font-size: 40px;
-                cursor: pointer;
-            }
-
-            .subscribebtn{
-                border-radius: 2px;
-                padding: 10px;
-                background-color: rgb(200,0,0);
-                color: white;
-                border: none;
-                font-size: 15px;
-                font-weight: bold;
-                cursor: pointer;
-                width: 50%;
-                height: auto;
-            }
-            .btns{
-                background-color: rgb(10,10,10);
-                color: lightgrey;
-                border: none;
-                font-size: 16px;
-                cursor: pointer;
-
-            }
-            .pointer{
-                cursor: pointer;
-            }
-            .flex-container{
-                display: flex;
-                flex-wrap: wrap;
-                width: 100%;
-                background-color: rgb(20,20,20);
-            }
-            .navbar{
-                display: flex;
-                flex-wrap: wrap;
-                align-content: space-around;
-                background-color: rgb(40,40,40);
-                color: lightgrey;
-                padding: 5px;
-            }
-            .navbar *{
-                text-align: center;
-                min-width: 50px;
-                margin: 4px;
-            }
-            a{
-                text-decoration: none;
-                color:white;
-            }
-            .mainsection{
-                display: flex;
-                flex-direction: column;
-                background-color: rgb(10,10,10);
-                width: 55%;
-                padding: 5px;
-                padding-top: 20px
-            }
-            .sidenav{
-                background-color: rgb(10,10,10);
-                display: flex;
-                flex-direction: column;
-                width: auto;
-                max-width: 400px;
-
-            }
-            .sidevid{
-                display: flex;
-                padding-bottom: 10px;
-            }
-            .imgthumbnails{
-                max-width: 50%;
-                height: auto;
-            }
-
-            .recommendedvids{
-                padding-left: 10px;
-                color: lightgray;
-            }
-            .hintText{
-                color:rgb(145,145,145);
-            }
-        /* Responsive layout - makes a two column-layout instead of four columns */
-        @media (max-width: 955px) {
-            .mainsection {
-                flex: 100%;
-                max-width: 100%;
-            }
-            .sidenav {
-                flex: 100%;
-                max-width: 100%;
-                justify-content: center;
-            }
-        }
-
-        /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-        @media (max-width: 600px) {
-            .mainsection {
-                flex: 100%;
-                max-width: 100%;
-            }
-            .sidenav {
-                flex: 100%;
-                max-width: 100%;
-                justify-content: center;
-            }
-        }   
-        </style>
-
     </head>
     <body>
 <!--    Navigation Bar-->
-        <div class="navbar" style="align-items: center;">
+        <nav class="navbar" style="align-items: center;">
             <a class="pointer" style="font-size: 20px;" href="index.html"><i class="fas fa-bars"></i></a>
             
             <a href="index.html"><img class="pointer" height="32" src="images/youtube.png" alt="Youtube Logo image"/></a>
             <a class="pointer" href="index.html"><h2 style="color: white;margin-right: 100px;">Youtube</h2></a>
 
             <div style="width:30%; height: 90%;"><input type="search" style="width: 100%;"></div>
-            <a class="pointer" style="background-color: gray;" href="index.html"><i class="fas fa-search"></i></a>
+            <button class="pointer" style="background-color: gray;" href="index.html"><i class="fas fa-search"></i></button>
             
             <a class="pointer" href="index.html"><i class="fas fa-bell"></i></a>
             <a class="pointer" href="index.html"><i class="fas fa-inbox"></i></a>
             <a class="pointer" href="index.html"><i class="fas fa-user-circle"></i></a>
  
-        </div>
+        </nav>
 
 
 
 <!--    Main Section-->
-        <div class="flex-container" style="justify-content: center;">
+        <main class="flex-container" style="justify-content: center;">
         <div class="mainsection">
-            <iframe width="90%" height="480" src="https://www.youtube.com/embed/V74l_zS1x8E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div><iframe width="90%" height="480" src="https://www.youtube.com/embed/V74l_zS1x8E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            
             <div class="flex-container" style="justify-content: flex-start;flex-direction: column;padding-top: 20px;">
                 <div style="font-weight: bold;font-size: 20px;">Contributing to Open Source Part I: The Easy Way</div>
                 <div class="flex-container" style="flex-direction: row;padding: 10px; border-bottom: 1px solid rgb(50,50,50);">
@@ -162,18 +43,19 @@
                     </div>
                 </div>
             </div>
+            
             <div class="flex-container" style="justify-content: center;">
                 <div class="flex-container">
                     <div style="margin-right: 10px;"><a style="" class="AvatarBtns"><img style="border-radius: 35px;" width="60" src="images/odin_avatar.jpg" alt="Image of Uploader"/></a></div>
                     <p style="">The Odin Project <br><span style="color: rgb(145,145,145);">Published on Feb 27, 2014</span></p>
                     <div style="align-self: center;margin-left: auto;padding-right: 16px;"><a class="subscribebtn">SUBSCRIBE 700</a></div>
                 </div>
+                
                 <div class="flex-container" style="justify-content: center;width: 85%;line-height: 22px;">
                     How do you contribute to open source?  In this video, I'll describe the easiest way to make a simple contribution to an open source project -- without using the command line, a text editor, "forking a repo", or even touching Git outside of Github.  I'll also describe what kinds of contributions open
                     <br>
                     <span style="color: rgb(145,145,145);font-size: 14px;">SHOW MORE</span>
                 </div>
-
             </div>
         </div>
 
@@ -187,6 +69,6 @@
             <div class="sidevid"><img src="images/4.webp" class="imgthumbnails" alt="Desktop Toubles"><span class="recommendedvids">Desktop Troubles<br><span class="hintText">Angelino Joelee<br>21k views</span></span></div>
             <div class="sidevid"><img src="images/5.webp" class="imgthumbnails" alt="Coding through Life"><span class="recommendedvids">Coding through Life<br><span class="hintText">TMNTBros<br>13k views</span></span></div>
         </div>
-        </div>
+        </main>
     </body>
 </html>
