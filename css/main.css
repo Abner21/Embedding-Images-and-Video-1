@@ -1,0 +1,116 @@
+body{
+    background-color: rgb(40,40,40);
+    color: white;
+    font-family: sans-serif;
+}
+
+.AvatarBtns{
+    background-color: rgb(10,10,10);
+    color: green;
+    border: none;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+.subscribebtn{
+    border-radius: 2px;
+    padding: 10px;
+    background-color: rgb(200,0,0);
+    color: white;
+    border: none;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 50%;
+    height: auto;
+}
+.btns{
+    background-color: rgb(10,10,10);
+    color: lightgrey;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.pointer{
+    cursor: pointer;
+}
+.flex-container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    background-color: rgb(20,20,20);
+}
+.navbar{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+    background-color: rgb(40,40,40);
+    color: lightgrey;
+    padding: 5px;
+}
+.navbar *{
+    text-align: center;
+    min-width: 50px;
+    margin: 4px;
+}
+a{
+    text-decoration: none;
+    color:white;
+}
+.mainsection{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(10,10,10);
+    width: 55%;
+    padding: 5px;
+    padding-top: 20px
+}
+.sidenav{
+    background-color: rgb(10,10,10);
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    max-width: 400px;
+
+}
+.sidevid{
+    display: flex;
+    padding-bottom: 10px;
+}
+.imgthumbnails{
+    max-width: 50%;
+    height: auto;
+}
+.recommendedvids{
+padding-left: 10px;
+color: lightgray;
+}
+.hintText{
+    color:rgb(145,145,145);
+}
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media (max-width: 955px) {
+    .mainsection {
+        flex: 100%;
+        max-width: 100%;
+    }
+    .sidenav {
+        flex: 100%;
+        max-width: 100%;
+        justify-content: center;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+    .mainsection {
+        flex: 100%;
+        max-width: 100%;
+    }
+    .sidenav {
+        flex: 100%;
+        max-width: 100%;
+        justify-content: center;
+    }
+}   
